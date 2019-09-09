@@ -40,7 +40,7 @@
     position: fixed;
     left: 5px;
     top: 5px;
-    color: #FFFFFF;
+    color: rgb(250, 227, 227);
     display: none;
     z-index: 2;
 }
@@ -66,7 +66,7 @@ h1 {
 
 .header { 
     background-color: #f3f3f3;
-    color: #2f4151;
+    color: #000000;
     
 }
 
@@ -94,19 +94,12 @@ h1 {
 
 /* nav section */
 .nav {
-    background-color: #2f4151;
+    background-color: #000000;
     /*background: rgba(39, 156, 215, .4);*/
     color: #f3f3f3;
     height: 60px;
     border-radius: 5px;
     margin-bottom: 30px;
-    /*
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    */
 }
 
 .nav ul {
@@ -148,7 +141,7 @@ figure {
 
 .hero-title, .skills-title {
     color: #FFFFFF;
-    background-color: #2f4151;
+    background-color: #000000;
     text-transform: uppercase;
     display: inline-block;
     padding: 10px 20px;
@@ -182,8 +175,8 @@ figure {
 .desc{
     width: 56%;
     height: inherit;
-    border-top: #279CD7 solid 1px;
-    border-bottom: #279CD7 solid 1px;
+    border-top: #439AAE solid 1px;
+    border-bottom: #439AAE solid 1px;
     display: flex;
     padding: 30px 10px;
     flex-wrap: wrap;
@@ -192,7 +185,7 @@ figure {
 
 .desc figure {
     padding: 10px;
-    border: #279CD7 solid 1px;
+    border: #439AAE solid 1px;
     margin-right: 50px;
 }
 
@@ -203,14 +196,14 @@ figure {
 }
 
 .education, .experience{
-    background-color: #2f4151;
+    background-color: #000000;
     color: #FFFFFF;
     padding-top: 10px;
     
 }
 
 .experience-title, .education-title{
-    background-color: #279CD7;
+    background-color: #439AAE;
     text-transform: uppercase;
     display: inline-block;
     padding: 10px 20px;
@@ -218,7 +211,7 @@ figure {
 }
 
 .date{
-    background-color: #279CD7;
+    background-color: #439AAE;
     display: inline-block;
     padding: 5px;
     border-radius: 5px;
@@ -428,7 +421,7 @@ Desktop first empezamos desde la pantalla más grande
     }
 
     .nav {
-        /*background-color: #2f4151;*/
+        /*background-color: #000000;*/
         background: rgba(39, 156, 215, .7);
         height: 60px;
         border-radius: 5px;
