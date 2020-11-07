@@ -1,247 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Nombre</title>
-    </head>
-    <style>
-        @font-face{font-family:'icomoon';src:url('../fonts/icomoon.eot?wfxpg2');src:url('../fonts/icomoon.eot?wfxpg2#iefix') format('embedded-opentype'),url('../fonts/icomoon.ttf?wfxpg2') format('truetype'),url('../fonts/icomoon.woff?wfxpg2') format('woff'),url('../fonts/icomoon.svg?wfxpg2#icomoon') format('svg');font-weight:normal;font-style:normal}[class^="icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e900"}.burger-button{width:40px;height:40px;border-radius:50px;background:rgba(27,33,39,.8);display:block;line-height:40px;text-align:center;position:fixed;left:5px;top:5px;color:rgb(250,227,227);display:none;z-index:2}body{font-family:'Lato',sans-serif;margin:0px;background-color:#fafafa}.container{max-width:900px;margin:0 auto}h1,h3{font-family:'Lato',sans-serif;font-weight:normal}h1{font-size:40px;letter-spacing:-.2px}.header{background-color:#f3f3f3;color:#000000}.dev-name{font-size:60px;font-style:normal}.dev-title{font-size:30px;font-style:normal}.name{margin-bottom:30px;margin-left:30px}.dev-title{margin:0px}.dev-name{margin:0px}.nav{background-color:#000000;color:#f3f3f3;height:60px;border-radius:5px;margin-bottom:30px}.nav ul{margin:0;padding:0;height:inherit;display:flex;flex:1}.nav ul li{height:inherit;list-style-type:none;display:flex;align-items:center}.nav a{color:#f3f3f3;text-decoration:none;padding:10px 20px;text-transform:uppercase;font-weight:300}.item-border{border-right:solid 1px #FFFFFF}figure{margin:0}.hero{margin-bottom:30px}.hero-title,.skills-title{color:#FFFFFF;background-color:#000000;text-transform:uppercase;display:inline-block;padding:10px 20px}.hero-info{display:flex;flex-wrap:wrap;align-items:center}.social{display:flex;justify-content:space-around}.social figure{width:50px}.social img{width:40px}.info{width:37%;height:inherit}.desc{width:56%;height:inherit;border-top:#439AAE solid 1px;border-bottom:#439AAE solid 1px;display:flex;padding:30px 10px;flex-wrap:wrap;justify-content:center}.desc figure{padding:10px;border:#439AAE solid 1px;margin-right:50px}.desc p{width:auto;padding-right:20px;text-align:justify}.experience{background-color:#000000;color:#FFFFFF;padding-top:10px}.experience-title{background-color:#439AAE;text-transform:uppercase;display:inline-block;padding:10px 20px;border-radius:5px}.skills{margin-bottom:30px}.skills-content{display:flex;justify-content:space-around;padding:10px 10px;flex-wrap:wrap}.skills-content figure{width:100px;height:120px;text-align:center}.skills-content p{margin:0}.info-colapse{display:none}.social-collapse{padding-top:30px;display:none}.info-personal-collapse{display:flex}@media screen and (max-width:899px){.info{display:none}.info-colapse{display:inline-block;max-width:40%}.info-personal-collapse{max-width:60%}.desc .info-personal-collapse figure{display:block;margin-right:1%;height:150px}.social-collapse{display:flex;justify-content:space-around}.social-collapse img{width:50px}.desc{width:100%;display:flex;flex-wrap:wrap;justify-content:center}}@media screen and (max-width:767px){.nav{height:100vh;;}.nav ul{display:block}.item-border{border-right:solid 0px #FFFFFF;text-align:center}.nav ul li{display:flex;justify-items:center;justify-content:center;padding:10px;height:auto}.hero-title{display:block}.skills-title{display:block}.experience-title{display:block}.info{display:none}.info-colapse{display:inline-block;max-width:100%}.info-personal-collapse{max-width:100%}.burger-button{display:block}.nav{background:rgba(39,156,215,.7);height:60px;border-radius:5px;margin-bottom:30px;position:fixed;top:0;left:-100vw;width:100vw;height:100vh}.hero-title,.skills-title,.experience-title{display:block;text-align:center}}@media screen and (max-width:425px){.info-personal-collapse{justify-content:center;flex-wrap:wrap}}
-    </style>
-    <body>
-        <i class="icon-menu burger-button " id="burger-menu"> </i>
-        <header class="header">
-            <div class="container">
-                <div class="name">
-                    <h1 class="dev-name">Nombre</h1>
-                    <h3 class="dev-title">Puesto</h3>
-                </div>
-                <nav class="nav">
-                    <ul> 
-                        <li> <a href="#hero" class="item-border">Acerca de mi</a></li>
-                        <li> <a href="#skills" class="item-border">Habilidades</a></li>
-                        <li> <a href="#experience" class="item-border">Experiencia</a></li>
-                        <li> <a href="#education" class="item-border">Educación</a></li>
-                        <li> <a href="" >Proyectos</a></li>
-                    </ul>
-                </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Luis Campos Bautista</title>
+  <meta name="desc">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/css/all.css">
+  <link rel="stylesheet" href="fonts//devicon-master/devicon.min.css">
+  <link rel="stylesheet" href="fonts/devicon-master/devicon-colors.css">
+</head>
+<body>
+    <nav id="main-nav">
+      <div class="wrapper nav-container">
+        <ul class="menu-icon">
+          <li><a href="#">bautistaj</a></li>
+        </ul>
+  
+        <ul id="menu-options" class="show show-options">
+          <li><a class="nav-item" href="#home">Home</a></li>
+          <li><a class="nav-item" href="#projects">Projects</a></li>
+          <li><a class="nav-item" href="#tutorials">Tutorials</a></li>
+        </ul>
+
+        <ul id="menu-hamburger" class="menu-hamburger hide">
+          <i id="menu-hamburger-icon" class="fas fa-bars"></i>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home"class="hero wrapper">
+      <div class="card">
+        <div class="card-header"></div>
+        <div class="card-content">
+          <figure>
+            <img src="https://avatars2.githubusercontent.com/u/21282810?s=460&u=b2242f78c5f3eb9361915668405b1f83ddc4218d&v=4" alt="Jose Luis Campos Bautista">
+          </figure>
+          <h1>I am Jose Luis</h1>
+          <p>Software Developer</p>
+          <ul class="social">
+            <li><a href="https://www.linkedin.com/in/bautistaj20" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://medium.com/@bautistaj20"  target="_blank"><i class="fab fa-medium-m"></i></a></li>
+            <li><a href="https://github.com/bautistaj" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- INIT PROJECTS -->
+    <section id="projects" class="wrapper">
+      <h1 class="title">Projects</h1>
+      
+      <div class="card-container">
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-angularjs-plain colored"></i>
+            <i class="devicon-heroku-plain colored"></i>
+            <i class="devicon-gitlab-plain colored"></i>
+          </div>
+
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>Persist Web APP</h1> 
             </div>
-        </header>
-
-        <section class="hero" id="hero">
-            <div class="container">
-                <h3 class="hero-title">Acerca de mi</h3>
-                <article class="hero-info">
-                    <div class="info">
-                        <p>Fecha nacimiento 00/00/00</p>
-                        <p>Lugar de nacimiento: </p>
-                        <p>Dirección: </p>
-                        <p>Teléfono:  0000000000</p>
-                        <p>Email: portfolio@example.com</p>
-                        
-                        <div class="social">
-                            <figure>
-                                <img src="images/in.png" alt="">
-                            </figure>
-
-                            <figure>
-                                <img src="images/facebook.png" alt="">
-                            </figure>
-
-                            <figure>
-                                <img src="images/github.png" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                
-                    <div class="desc">
-                        <div class="info-colapse">
-                            <p>Fecha nacimiento 00/00/00</p>
-                            <p>Lugar de nacimiento: </p>
-                            <p>Dirección: </p>
-                            <p>Teléfono: </p>
-                            <p>Email: portfolio@example.com</p>
-                        </div>
-                        <div class="info-personal-collapse">
-                            <figure>
-                                <img src="https://picsum.photos/150/150
-                                    " alt="Nombre"/>
-                            </figure>    
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p> 
-                        </div>
-                </article>
-
-                <div class="social-collapse">
-                    <figure>
-                        <img src="images/in.png" alt="">
-                    </figure>
-
-                    <figure>
-                        <img src="images/facebook.png" alt="">
-                    </figure>
-
-                    <figure>
-                        <img src="images/github.png" alt="">
-                    </figure>
-                </div>
+            <div class="card-item__description">
+              <p>Persist is an application for storing documentation of processes for construction sites.</p>
             </div>
-        </section>
+          </div>
 
-        <section id="skills" class="skills">
-            <div class="container">
-                <h3 class="skills-title">Habilidades</h3>
-                <article class="skills-content">
-                    <figure>
-                        <img src="images/graph.png" alt="">
-                        <p>Java</p>
-                    </figure>
-                    <figure>
-                        <img src="images/graph.png" alt="">
-                        <p>Java</p>
-                    </figure>
-                    <figure>
-                        <img src="images/graph.png" alt="">
-                        <p>Java</p>
-                    </figure>
-                    <figure>
-                        <img src="images/graph.png" alt="">
-                        <p>Java</p>
-                    </figure>
-                    <figure>
-                        <img src="images/graph.png" alt="">
-                        <p>Java</p>
-                    </figure>
-                    <figure>
-                        <img src="images/graph.png" alt="">
-                        <p>Java</p>
-                    </figure>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://persist-3cdd8.web.app/persist/login" target="_blank">Website</a>
+          </div>
+        </div>
 
-                    <figure>
-                        <img src="images/graph.png" alt="">
-                        <p>Java</p>
-                    </figure>
-                    <figure>
-                        <img src="images/graph.png" alt="">
-                        <p>Java</p>
-                    </figure>
-                </article>
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-postgresql-plain colored"></i>
+            <i class="devicon-heroku-plain colored"></i>
+            <i class="devicon-gitlab-plain colored"></i>
+          </div>
+
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>Persist API</h1> 
             </div>
-        </section>
-
-        <section id="experience" class="experience">
-            <div class="container">
-                <h3 class="experience-title">Experiencia</h3>
-                <article>
-                    <ul>
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
-                    </ul>    
-                </article>
+            <div class="card-item__description">
+              <p>Persist is an application for storing documentation of processes for construction sites.</p>
             </div>
-        </section>
+          </div>
 
-        <section id="education" class="education">
-            <div class="container">
-                <h3 class="education-title">Educación</h3>
-                <article>
-                    <ul>
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://persist-staging-api.herokuapp.com/api" target="_blank">Api</a>
+          </div>
+        </div>
 
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-postgresql-plain colored"></i>
+            <i class="devicon-heroku-plain colored"></i>
+            <i class="devicon-express-original"></i>
+          </div>
 
-                        <li class="list-content">
-                            <div class="education-head">
-                                <h4>Experiencia uno</h4>
-                                <p class="date"> 2014-2015</p>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </li>
-                    </ul>
-                </article>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>Live Home API</h1> 
             </div>
-        </section>
-    </body>
+            <div class="card-item__description">
+              <p>Livehome is an app where you can publish, sell , rent and find a new place for living. Livehome is the link between owners and buyers.</p>
+            </div>
+          </div>
 
-    <link rel="stylesheet" href="css/portfolio.min.css">
-    <script>
-        const nav = document.querySelector('.nav');
-        const bugerMenu = document.querySelector('#burger-menu');
-        const ipad =  window.matchMedia('screen and (max-width : 767px)');
-        const widthViewport = document.documentElement.clientWidth;
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/faroDev/LiveHome/tree/develop/backend/liveHomeBackend" target="_blank">Repository</a>
+            <a class="button primary" href="https://documenter.getpostman.com/view/11349713/SzmfXccD?version=latest#dac67580-b347-4adb-9708-114a69a40e9a" target="_blank">Docs</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-npm-original-wordmark colored"></i>
+            <i class="fab fa-markdown"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>postman-to-markdown</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>Generate documentation in markdown from postman documentation.</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/postman-to-markdown" target="_blank">Repository</a>
+            <a class="button primary" href="https://www.npmjs.com/package/postman-to-markdown" target="_blank">Package</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-npm-original-wordmark colored"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>bootstrap-api-express</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>With this package you can create a basic structure of api project with express and body-parser.</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/bootstrap-api-express" target="_blank">Repository</a>
+            <a class="button primary" href="https://www.npmjs.com/package/bootstrap-api-express" target="_blank">Package</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-mongodb-plain colored"></i>
+          </div>
+
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>WebScraping</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>This is a project to practice web scraping with puppeteer and create an rest Api Rest with NestJS</p>
+            </div>
+          </div>
+
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/WebScraping" target="_blank">Repository</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header ">
+            <i class="devicon-vuejs-plain colored"></i>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>Exchange</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>Project to obtain the quotes of the cryptocurrencies more important through the Coincap REST API</p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <a class="button primary" href="https://github.com/bautistaj/exchange" target="_blank">Repository</a>
+            <a class="button primary" href="https://bautistaj-exchange.netlify.app/" target="_blank">Website</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-twitter-plain colored"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>twitter-tracker</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>Application that listen to tweets from tweeter API and track certain keywords and those tweets are available through an API</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/twitter-tracker" target="_blank">Repository</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>web-components-spa</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>Single Page Application implement web components and JS vanilla, consume Rick and Morty API</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/web-components-spa" target="_blank">Repository</a>
+            <a class="button primary" href="https://bautistaj.github.io/web-components-spa/" target="_blank">Website</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-nodejs-plain colored"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>strangerTeamChallenge</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>
+                Using the Twitter API allows you to search using the hashtag of the last 7 days, with a counter of how many tweets have been made in this period of time. Allows you to compare the data of two hashtag and export the results.</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/strangerTeamChallenge" target="_blank">Repository</a>
+            <a class="button primary" href="https://st-challenge-front-qad9a5lhw.now.sh/" target="_blank">Website</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-angularjs-plain colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>Register App Front-end</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>Application to keep a record and control the status of processes for the delivery of homes</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/general_register-front-end" target="_blank">Repository</a>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-java-plain colored"></i>
+            <i class="devicon-mysql-plain colored"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>Register API</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>Application to keep a record and control the status of processes for the delivery of homes</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/general_register" target="_blank">Repository</a>
+          </div>
+        </div>
+-->
+
+        <div class="card-item">
+          <div class="card-item-header head">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item__title">
+              <h1>Portfolio</h1> 
+            </div>
+            <div class="card-item__description">
+              <p>My portfolio created with HTML, CSS and JS.</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://github.com/bautistaj/portfolio" target="_blank">Repository</a>
+            <a class="button primary" href="https://bautistaj.github.io/portfolio/" target="_blank">Website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END PROJECTS -->
+    <section id="tutorials" class="wrapper">
+      <h1 class="title">Tutorials</h1>
+      <div class="card-container-tutorials">
         
-        ipad.addListener(validation)
-        function validation(event) {
-            if(event.matches) {
-                bugerMenu.addEventListener('click',hideShow);
-                nav.addEventListener('click',hideShow);
-            }else {
-                bugerMenu.removeEventListener('click',hideShow);
-                nav.removeChild('click',hideShow);
-            }
-                
-        }
+        <div class="card-item-tutorial">
+          <div class="card-item-header angular main">
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item-tutorial__title">
+              <h1>How to Deploy an Angular App in Apache Tomcat With Azure DevOps</h1> 
+            </div>
+            <div class="card-item-tutorial__description">
+              <p>In this tutorial I explain how to deploy an Angular App in Apache Tomcat Server using Azure DevOps. You learn how to configure a pipeline in Azure DevOps and how to package angular app in war file</p>
+            </div>
+          </div>
+          <div class="card-footer foot">
+            <a class="button primary" href="https://medium.com/swlh/how-to-deploy-an-angular-app-in-apache-tomcat-with-azure-devops-900e67a21122" target="_blank">Read more</a>
+          </div>
+        </div>
 
-        if(widthViewport <= 767) {
-            bugerMenu.addEventListener('click',hideShow);
-            nav.addEventListener('click',hideShow);
-        }
+        <div class="card-item-tutorial">
+          <div class="card-item-header nestjs main">
+          </div>
+          <div class="card-item-content main">
+            <div class="card-item-tutorial__title">
+              <h1>Create an API Rest With Next JS and PostgreSQL</h1> 
+            </div>
+            <div class="card-item-tutorial__description">
+              <p>In this text we learn how to create and Api with NestJS using CLI and some important decorators, the configuration of controllers, services and repositories. The configuration of data base using Docker.</p>
+            </div>
+          </div>
+
+          <div class="card-footer foot">
+            <a class="button primary" href="https://medium.com/swlh/create-an-api-rest-with-nestjs-1954723e8234" target="_blank">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>bautistj</p>
+    </footer>
     
-        function hideShow() {
-            nav.classList.toggle('is-active');
-        }
+    <script>
+      const nav = document.getElementById('main-nav');
+      const menu = document.getElementById('menu-hamburger');
+      const menuOptions = document.getElementById('menu-options');
+      const menuIcon = document.getElementById('menu-hamburger-icon');
+      const mediaQuery = window.matchMedia('(max-width: 768px)')
+
+      const navOffsetHeight =  nav.offsetHeight;
+      let position = 0;
+
+      window.addEventListener('scroll', function(e) {
+        position = window.scrollY;
+        nav.className = position > navOffsetHeight ? 'sticky fade-in' : '';
+      });
+      
+      //TODO
+      // init value
+      menuOptions.className = menuOptions.className.indexOf('show') === 0 && mediaQuery.matches ?  'hide' :'show show-options';
+      
+      menu.addEventListener('click', function(e) {
+        menuOptions.className = menuOptions.className.indexOf('show') === 0 ?  'hide' :'show show-options';
+        menuIcon.className = 'fas fa-bars' === menuIcon.className ? 'fas fa-times' : 'fas fa-bars';
+      });
+
+      
     </script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</body>
 </html>
