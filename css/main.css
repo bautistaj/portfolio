@@ -143,7 +143,6 @@ a {
 
 .card {
   width: 100%;
-  height: 460px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: #24273B;
@@ -159,11 +158,9 @@ a {
 
 .card-content{
   position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   top: -140px;
+  text-align: center;
+  height: 370px;
 }
 /* HERO SECTION */
 
@@ -307,6 +304,10 @@ a {
   background: url(./../img/nestjs_header.png) no-repeat center center; 
 }
 
+.gitlab {
+  background: url(./../img/gitlab_header.png) no-repeat center center; 
+}
+
 .card-item-tutorial__title {
   padding: 10px;
   text-align: center;
@@ -348,6 +349,62 @@ footer {
   color: #FA4958;
   background-color: #1F2235;
 }
+
+
+/* ABOUT */
+.about {
+  color: #FFFFFF;
+  padding: 1em;
+  background-color: #24273B;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: justify;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* CARD CONTAINER TUTORIALS*/
+.card-container-experience {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* experience*/
+.experience {
+  font-size: 20px;
+  display: grid;
+  /* justify-content: end; */
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 10px;
+  color: #e6c300;
+  align-items: center;
+  justify-items: center;
+}
+
+.card-item__description .experience {
+  font-size: 18px;
+}
+
+.tech-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.card-item-tech {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: #24273B;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: "head"
+                       "main";
+  grid-template-rows: 60px 1fr;
+  transition: all 1.2s;
+}
+
+.experience :first-child {
+  font-size: 30px;
+}
+
 @keyframes fadeIn {
   0% {opacity:0;}
   50% {opacity:.5;}
@@ -356,10 +413,6 @@ footer {
 
 /* Media queries */
 @media screen and (max-width: 320px) {
-  body {
-    background-color: lawngreen;
-  }
-
   .menu-hamburger {
     display: block;
   }
@@ -388,6 +441,11 @@ footer {
   .card-container-tutorials {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .card-container-experience {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .menu-hamburger {
     display: block;
   }
