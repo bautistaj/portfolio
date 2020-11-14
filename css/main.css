@@ -401,6 +401,10 @@ footer {
   transition: all 1.2s;
 }
 
+.card-item-tech:hover {
+  transform: scale(1.1);
+}
+
 .experience :first-child {
   font-size: 30px;
 }
